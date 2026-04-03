@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpaceMissionsTracker.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AccountController.GetUsers">
+            <summary>
+            Retrieves a list of all registered users.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AccountController.Register(SpaceMissionsTracker.Core.DTOs.RegisterDTO)">
+            <summary>
+            Registers a new user account.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AccountController.Login(SpaceMissionsTracker.Core.DTOs.LoginDTO)">
+            <summary>
+            Authenticates a user and returns an access token + refresh token.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AccountController.Logout">
+            <summary>
+            Logs out the current user (not implemented by server side).
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AccountController.GenerateNewAccessToken(SpaceMissionsTracker.Core.DTOs.TokenModel)">
+            <summary>
+            Refreshes an expired access token using a valid refresh token.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AstronautsController.GetAllAstronauts">
+            <summary>
+            Retrieves all astronauts from the database.
+            </summary>
+            
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AstronautsController.AddAstronaut(SpaceMissionsTracker.Core.DTOs.AddAstronautRequestDTO)">
+            <summary>
+            Creates a new astronaut.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AstronautsController.GetAstronautById(System.Int32)">
+            <summary>
+            Retrieves a single astronaut by its unique ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AstronautsController.DeleteAstronaut(System.Int32)">
+            <summary>
+            Deletes an astronaut by its ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.AstronautsController.UpdateAstronaut(System.Int32,SpaceMissionsTracker.Core.DTOs.AddAstronautRequestDTO)">
+            <summary>
+            Fully updates an existing astronaut.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionAstronautsController.GetAllMissionAstronauts">
+            <summary>
+            Gets all mission-astronaut relationships.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionAstronautsController.GetMissionAstronautById(System.Int32,System.Int32)">
+            <summary>
+            Gets a specific mission-astronaut relationship by composite key.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionAstronautsController.AddMissionAstronaut(SpaceMissionsTracker.Core.DTOs.AddMissionAstronautRequestDTO)">
+            <summary>
+            Creates a new mission-astronaut relationship.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionAstronautsController.DeleteMissionAstronaut(System.Int32,System.Int32)">
+            <summary>
+            Deletes a mission-astronaut relationship.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionsController.GetAllMissions">
+            <summary>
+            Retrieves all missions with their associated rocket.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionsController.GetMissionById(System.Int32)">
+            <summary>
+            Retrieves a single mission by its unique ID, including the related rocket.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionsController.AddMission(SpaceMissionsTracker.Core.DTOs.AddMissionRequestDTO)">
+            <summary>
+            Creates a new mission.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionsController.UpdateMission(System.Int32,SpaceMissionsTracker.Core.DTOs.AddMissionRequestDTO)">
+            <summary>
+            Fully updates an existing mission.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.MissionsController.DeleteMission(System.Int32)">
+            <summary>
+            Deletes a mission by its ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.RocketsController.GetAllRockets">
+            <summary>
+            Gets all rockets with their associated agency.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.RocketsController.GetRocketById(System.Int32)">
+            <summary>
+            Gets a single rocket by ID, including its agency.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.RocketsController.AddRocket(SpaceMissionsTracker.Core.DTOs.AddRocketRequestDTO)">
+            <summary>
+            Creates a new rocket.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.RocketsController.UpdateRocket(System.Int32,SpaceMissionsTracker.Core.DTOs.AddRocketRequestDTO)">
+            <summary>
+            Updates an existing rocket.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.WebApi.Controllers.RocketsController.DeleteRocket(System.Int32)">
+            <summary>
+            Deletes a rocket by ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.Web.Controllers.AgenciesController.GetAllAgencies">
+            <summary>
+            Retrieves all agencies from the database.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.Web.Controllers.AgenciesController.AddAgency(SpaceMissionsTracker.Core.DTOs.AddAgencyRequestDTO)">
+            <summary>
+            Creates a new agency.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.Web.Controllers.AgenciesController.GetAgencyById(System.Int32)">
+            <summary>
+            Retrieves a single agency by its unique ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.Web.Controllers.AgenciesController.DeleteAgency(System.Int32)">
+            <summary>
+            Deletes an agency by its ID.
+            </summary>
+        </member>
+        <member name="M:SpaceMissionsTracker.Web.Controllers.AgenciesController.UpdateAgency(System.Int32,SpaceMissionsTracker.Core.DTOs.AddAgencyRequestDTO)">
+            <summary>
+            Fully updates an existing agency.
+            </summary>
+        </member>
+    </members>
+</doc>

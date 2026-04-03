@@ -1,0 +1,6 @@
+@SpaceMissionsTracker.Web_HostAddress = http://localhost:5293
+
+GET {{SpaceMissionsTracker.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

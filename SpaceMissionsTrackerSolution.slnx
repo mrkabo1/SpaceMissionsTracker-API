@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SpaceMissionsTracker.Core/SpaceMissionsTracker.Core.csproj" />
+  <Project Path="SpaceMissionsTracker.Infrastructure/SpaceMissionsTracker.Infrastructure.csproj" />
+  <Project Path="SpaceMissionsTracker.Web/SpaceMissionsTracker.WebApi.csproj" />
+</Solution>
